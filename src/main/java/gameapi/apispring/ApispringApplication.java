@@ -10,5 +10,3 @@ public class ApispringApplication {
 		SpringApplication.run(ApispringApplication.class, args);
 	}
 }
-
-
