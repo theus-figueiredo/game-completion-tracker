@@ -19,6 +19,19 @@ public class Game {
   @ManyToOne
   private Publisher publisher;
 
+  public Game() {}
+
+  public Game (
+          String title,
+          boolean exclusive,
+          Studio studio,
+          Publisher publisher
+  ) {
+    this.title = title;
+    this.exclusive = exclusive;
+    this.publisher = publisher;
+    this.studio = studio;
+  }
 
   @Override
   public boolean equals(Object o) {
